@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar For Elevvo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar" aria-expanded="true">
+            <div class="sidebar-header">
+                <div class="logo-placeholder" aria-hidden="true">
+                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                    <span class="logo-text"></span>
+                </div>
+                <button class="toggle-btn" id="toggleBtn" aria-label="Toggle sidebar">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav" aria-label="Main navigation">
+                <ul>
+                    <li>
+                        <a href="#" class="nav-link" aria-current="page">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                            <span class="link-text">Home</span>
+                            <span class="tooltip">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            <span class="link-text">Dashboard</span>
+                            <span class="tooltip">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span class="link-text">Messages</span>
+                            <span class="tooltip">Messages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                            <span class="link-text">Settings</span>
+                            <span class="tooltip">Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            <span class="link-text">Profile</span>
+                            <span class="tooltip">Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://picsum.photos/200/300" alt="User profile" class="profile-img">
+                    <div class="profile-info">
+                        <span class="profile-name">Fady wageih</span>
+                        <span class="profile-role">Admin</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="main-content" id="mainContent">
+            <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle navigation">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <h1>Main Content</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut autem ipsum labore. Numquam nostrum voluptate facilis unde veritatis cupiditate sed aliquid suscipit ullam repellendus. Temporibus explicabo obcaecati neque repellat earum.</p>
+            <div class="content-grid">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+                <div class="card">Card 4</div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
